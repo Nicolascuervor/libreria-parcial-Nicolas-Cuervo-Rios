@@ -9,6 +9,10 @@ class Producto:
         self.descuento = 0.0
         
     def aplicar_descuento(self, porcentaje: float) -> None:
+        """
+        Aplica un descuento porcentual al precio base del producto.
+        El porcentaje debe estar entre 0 y 40 inclusive.
+        """
         if not (0 <= porcentaje <= 40):
             raise ValueError("El descuento debe estar entre 0% y 40%")
         self.descuento = porcentaje
