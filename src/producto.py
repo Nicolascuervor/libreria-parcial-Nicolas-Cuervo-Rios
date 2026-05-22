@@ -18,6 +18,10 @@ class Producto:
         self.descuento = porcentaje
 
     def calcular_precio_final(self) -> float:
+        """
+        Calcula el precio final aplicando el descuento y luego el IVA del 19%.
+        Garantiza que el precio final nunca sea negativo.
+        """
         precio_con_descuento = self.precio_base * (1 - self.descuento / 100)
         precio_final = precio_con_descuento * 1.19
         return max(0.0, precio_final)
