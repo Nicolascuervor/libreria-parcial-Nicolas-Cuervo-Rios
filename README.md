@@ -49,3 +49,18 @@ Las operaciones con porcentajes (tanto el descuento como el IVA del 19%) general
 | TC6 | Regla 2 | Aplicar descuento superior al máximo permitido | Producto creado con precio base 3000 | Descuento: 45% | 1. Intentar aplicar el descuento al producto | Sistema rechaza el descuento con mensaje de error | Negativo |
 | TC7 | Regla 3 | Calcular precio final con descuento y sin resultado negativo | Producto con precio base 10000 y descuento 20% | Ninguna | 1. Calcular precio final del producto | Retorna 9520 (10000 - 2000 = 8000; + 19% = 9520) | Positivo |
 | TC8 | Regla 3 | Calcular precio final sin descuento (0%) | Producto con precio base 5000 y descuento 0% | Ninguna | 1. Calcular precio final del producto | Retorna 5950 (5000 - 0 = 5000; + 19% = 5950) | Positivo |
+
+## Reporte de Cobertura
+
+```text
+=============================== tests coverage ================================
+_______________ coverage: platform win32, python 3.14.0-final-0 _______________
+
+Name              Stmts   Miss  Cover
+-------------------------------------
+src\__init__.py       0      0   100%
+src\producto.py      15      0   100%
+-------------------------------------
+TOTAL                15      0   100%
+============================== 8 passed in 0.10s ==============================
+```
