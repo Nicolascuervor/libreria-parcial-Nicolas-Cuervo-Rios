@@ -24,5 +24,10 @@ testpaths = ["tests"]
 python_files = ["test_*.py"]
 markers = [
     "smoke: Pruebas rapidas criticas",
-    "regression: Pruebas de regresion completas"
+    "regression: Pruebas de regresion completas",
+    "red: Pruebas que estan fallando o en desarrollo (ciclo RED)",
+    "valido: Escenarios válidos (BDD)",
+    "descuento: Relacionado a la regla de descuentos (BDD)",
+    "error: Escenarios de error (BDD)",
+    "precio_final: Relacionado al cálculo del precio final (BDD)"
 ]
