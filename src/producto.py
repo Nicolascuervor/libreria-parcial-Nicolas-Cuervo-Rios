@@ -16,3 +16,6 @@ class Producto:
         if not (0 <= porcentaje <= 40):
             raise ValueError("El descuento debe estar entre 0% y 40%")
         self.descuento = porcentaje
+
+    def calcular_precio_final(self) -> float:
+        return 0.0
