@@ -6,3 +6,7 @@ class Producto:
             raise ValueError("El precio base debe ser mayor que cero")
         self.nombre = nombre
         self.precio_base = precio_base
+        self.descuento = 0.0
+        
+    def aplicar_descuento(self, porcentaje: float) -> None:
+        pass
